@@ -19,7 +19,11 @@ Firebase Authentication
 Firebase Realtime Database / Firestore
 
 📱 Screenshots
-(You can add screenshots here if you have them)
+![Screenshot_20250507-190848_NotesApp](https://github.com/user-attachments/assets/4e21f364-4092-4a9b-8327-40873ac8200c)
+![Screenshot_20250507-190856_NotesApp](https://github.com/user-attachments/assets/239bfe2b-3c4e-47b3-8e34-41373cabba59)
+![Screenshot_20250507-190837_NotesApp](https://github.com/user-attachments/assets/4932f94b-2a7c-4a7b-a814-6d6119d55aad)
+![Screenshot_20250507-190919_NotesApp](https://github.com/user-attachments/assets/87eab1f7-a1f4-4c98-8b1d-89ddda320433)
+
 
 🚀 How to Use
 Clone the repo or download the APK
