@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="back_button_desc">Navigate back</string>
+    <string name="save_note_desc">Save note</string>
+    <string name="add_new_note">Add New Note</string>
+    <string name="title_hint">Title</string>
+    <string name="content_hint">Content</string>
+    <string name="title_input_desc">Note title input</string>
+    <string name="content_input_desc">Note content input</string>
+    <string name="delete_note">Delete Note</string>
+</resources>

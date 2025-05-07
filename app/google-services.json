@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "79221321964",
+    "firebase_url": "https://gpa-tpgit-default-rtdb.firebaseio.com",
+    "project_id": "gpa-tpgit",
+    "storage_bucket": "gpa-tpgit.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79221321964:android:7549085914b74b508035c9",
+        "android_client_info": {
+          "package_name": "com.example.cgpa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFoCybRrrKHmjQTyRK-_BHr8NpsDwC4rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79221321964:android:ffb78750af30a0cc8035c9",
+        "android_client_info": {
+          "package_name": "com.example.gpa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFoCybRrrKHmjQTyRK-_BHr8NpsDwC4rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79221321964:android:3ae0ec256d9922488035c9",
+        "android_client_info": {
+          "package_name": "com.example.notesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFoCybRrrKHmjQTyRK-_BHr8NpsDwC4rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

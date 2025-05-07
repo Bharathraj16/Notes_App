@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    android:padding="24dp"
+    tools:context=".CreateAccountActivity">
+
+    <!-- Sign Up Icon -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/signup"
+        android:id="@+id/sign_up_icon"
+
+         />
+
+    <!-- Welcome Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_icon"
+        android:layout_marginTop="24dp"
+        android:id="@+id/hello_text"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's get started"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <!-- Sign Up Form -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/form_layout"
+        android:layout_below="@id/hello_text"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <!-- Outlined Email Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:background="@drawable/rounder_corner"
+            app:boxStrokeWidth="1dp"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_edit_text"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_60"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Outlined Password Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxStrokeWidth="1dp"
+            android:background="@drawable/rounder_corner"
+            app:startIconDrawable="@drawable/ic_password"
+            app:startIconTint="@color/white"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_edit_text"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_60"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Outlined Confirm Password Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxStrokeWidth="1dp"
+            android:background="@drawable/rounder_corner"
+            app:startIconDrawable="@drawable/ic_password"
+            app:startIconTint="@color/white"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_password_edit_text"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_60"
+                android:textSize="16sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Outlined Create Account Button -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/create_account_btn"
+            android:layout_marginTop="24dp"
+            android:text="CREATE ACCOUNT"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/my_primary"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="8dp"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+    <!-- Login Link -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_layout"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/login_text_btn"/>
+    </LinearLayout>
+
+</RelativeLayout>
